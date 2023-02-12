@@ -5,6 +5,7 @@
 ;;; Code:
 
 (require 'scala-mode-syntax)
+(require 'cl-lib)
 
 ;; Make lambdas proper clousures (only in this file)
 (make-local-variable 'lexical-binding)

@@ -4,6 +4,7 @@
 
 (require 'scala-mode-syntax)
 (require 'scala-mode-lib)
+(require 'thingatpt)
 
 (eval-when-compile
   (defvar scala-indent:effective-run-on-strategy)
