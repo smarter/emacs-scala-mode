@@ -17,6 +17,9 @@
 ;;; enclosing [], i.e. they are not regular expressions, but can be used in
 ;;; declaring one.
 
+(eval-when-compile
+  (require 'subr-x))
+
 (defun scala-syntax:alt (&rest res)
   (concat "\\(" (string-join res "\\|") "\\)"))
 
