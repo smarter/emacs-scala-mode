@@ -766,7 +766,7 @@ certain amount of incorrect or in-progress syntactic forms."
          (stopped-point (nth 4 analysis))
          (end-stack (nth 5 analysis))
          )
-    (message "analysis: %s" analysis)
+    ;; (message "analysis: %s" analysis)
     (while (when-let ((x (scala-indent:continue-lookback?
                         syntax-elem ctxt-line line-no stopped-point end-stack)))
              (setq syntax-elem (nth 0 x))
